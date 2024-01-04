@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="shortcut icon" href="img/logo_favicon.webp" type="image/webp">
+    <meta name="robots" content="noindex">
+    <title>Kontakt (test)</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html">
+                <img class="logo" src="/img/logo.webp" alt="logo">
+            </a>
+            <div class="navbar">
+                <a href="index.html">Forside</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="om_mig.html">Om mig</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <hr>
+        <div class="combined-column">
+            <div class="sticky-column">
+                <!-- Indhold til den sticky venstre kolonne -->
+                <!-- Kopier dit eksisterende indhold her -->
+                <div class="sticky-indhold">
+                    <h1>Skriv til mig her</h1>
+                    <form name="kontakt" netlify action="tak.html">
+                        <!-- Formular-indhold -->
+                        <label for="Navn"> Navn</label>
+                        <input id="Navn" name="Navn" type="text">
+
+                        <label for="Email">Email</label>
+                        <input id="Email" name="Email" type="email">
+
+                        <label for="Besked">Besked</label>
+                        <label>
+                            <textarea name="besked" rows="5"></textarea>
+                        </label>
+                        <button class="form_btn">Indsend</button>
+                    </form>
+
+                    <h2><u>Email & telefon</u></h2>
+                    <div class="contact_info">
+                        <ul>
+                            <li><em>Sara.ringkow@gmail.com</em></li>
+                            <li><em>+45 42428807</em></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <h2><u>Sociale medier</u></h2>
+                    <div class="socials">
+                        <div class="social_col1">
+                            <a href="https://www.linkedin.com/in/sara-ringkow-petersen-49830b264/">
+                                <img src="img/linkedin.png" alt="linkedin logo"></a>
+                        </div>
+                        <div class="social_col2">
+                            <a href="https://www.instagram.com/sara_ringkow/">
+                                <img src="img/instagram.png" alt="instagram logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-column">
+                <h1>Kontakt</h1>
+                <p>Ring eller skriv en besked, find mig på de sociale medier, eller brug formularen for at skrive en
+                    mail til mig–– hvis du eventuelt har et spørgsmål eller to. Så
+                    svarer jeg så hurtigst som muligt!
+                </p>
+                <br>
+                <hr>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="logo-column">
+            <a href="index.html">
+                <img class="logo-footer" src="img/logo2.webp" alt="Footer-logo">
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Portfolio</h3>
+            <ul>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Om mig</h3>
+            <ul>
+                <li>
+                    <a href="om_mig.html">Om mig</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Kontakt mig her:</h3>
+            <ul>
+                <li>
+                    Sara.ringkow@gmail.com
+                </li>
+                <li>
+                    +45 42428807
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/button.js"></script>
+
+</html>

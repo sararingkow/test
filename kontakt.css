@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.combined-column {
+  display: flex;
+}
+
+/*STICKY COLUMN*/
+
+.sticky-column {
+  flex: 1;
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  background-color: var(--gray); /*Variabel farve fra layout.css*/
+  box-shadow: -20px 0 10px -20px rgba(0, 0, 0, 0.45) inset;
+  width: 100%;
+}
+
+.sticky-indhold {
+  position: sticky;
+  top: 0px;
+  padding: 5%;
+}
+
+.sticky-indhold p {
+  color: #000;
+}
+
+.sticky-indhold h1 {
+  font-family: "Josefin Sans";
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact_info li {
+  text-align: center;
+}
+
+.contact_info ul li {
+  list-style: none;
+}
+
+.socials {
+  position: sticky;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social_col1 {
+  display: flex;
+  justify-content: end;
+}
+
+.social_col2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social_col1 img,
+.social_col2 img {
+  width: 55%;
+  opacity: 60%;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #686868;
+  text-align: center;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+}
+
+h3 {
+  font-size: 24px;
+  color: #000000;
+  text-align: left;
+  padding-top: 2%;
+}
+
+/*MAIN COLUMN*/
+
+.main-column {
+  flex: 3;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.main-column h1 {
+  font-family: "Josefin Sans";
+  color: #000;
+  font-size: 35px;
+}
+
+.main-column p {
+  font-family: "Montserrat";
+  color: #000;
+  font-size: 20px;
+}
+
+form {
+  padding: 2rem;
+  background: #e6e6e6;
+  border-radius: 8px;
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+}
+
+img {
+  max-height: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.background {
+  background-color: #24292f;
+}
+
+.text {
+  padding: 30px 30px 30px;
+  line-height: 1.5em;
+  border-bottom: 2px solid #24292f;
+}
+
+.paragraph {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/*KNAP STYLING FOR FORM*/
+.form_btn {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #686868;
+  width: 100px;
+}
+
+.form_btn:hover {
+  background-color: #888888;
+  cursor: pointer;
+}
+
+.form_btn:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1000px) {
+  .main-column h1 {
+    padding-top: 3%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .main-column p {
+    font-family: "Montserrat";
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .combined-column {
+    flex-direction: column-reverse;
+  }
+
+  .sticky-column,
+  .main-column {
+    flex: initial; /* Fjerner flex-egenskaber på mindre skærme */
+    position: static; /* Fjerner sticky position på mindre skærme */
+  }
+
+  .paragraph {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .main-column {
+    margin: 0px;
+  }
+
+  .sticky-column {
+    padding: 20px;
+  }
+
+  .sticky-indhold {
+    padding: 20px;
+  }
+}

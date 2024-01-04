@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --gray: #f5f5f5;
+}
+
+button,
+label,
+li,
+a,
+ul li,
+h3 {
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+header,
+footer {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+footer p {
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Generelle stilarter for footer */
+.site-footer {
+  background-color: #e6e6e6;
+}
+
+.site-footer p {
+  display: flex;
+  justify-content: left;
+  line-height: 2;
+}
+
+.logo-footer {
+  max-width: 120px;
+  margin: 20px;
+}
+
+i {
+  font-size: 40px;
+  color: #ababab;
+}
+
+i:hover {
+  color: #ababab;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-column {
+  display: grid;
+  max-width: 250px;
+  margin: 20px;
+}
+
+.site-footer ul li {
+  display: flex;
+  justify-content: left;
+  color: #000000;
+  font-size: 18px;
+  list-style: none;
+}
+
+.site-footer a {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.bottom {
+  margin: 20px;
+}
+
+.bottom a {
+  color: #000000;
+  font-size: 15px;
+  line-height: 2;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+/* Footer container og kolonner */
+.footer-container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-footer a:hover {
+  color: #686868;
+}
+
+/* Responsivitet for mindre skærmstørrelser */
+@media (max-width: 800px) {
+  .footer-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .site-footer a {
+    font-size: 18px;
+  }
+
+  .site-footer p {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+  }
+
+  .site-footer ul li {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    width: 80%;
+  }
+
+  .site-footer img {
+    max-width: 120px;
+  }
+}
+
+/* NAVIGATIONSBAR */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 130px;
+  margin: 20px;
+}
+
+.navbar {
+  display: flex;
+  font-family: "Montserrat";
+  justify-content: center; /* Centrerer indholdet vandret */
+  align-items: center; /* Centrerer indholdet lodret */
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: #686868;
+  padding: 14px 16px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #686868; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: "Montserrat";
+  opacity: 60%;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media (max-width: 800px) {
+  .menu {
+    border: 7px solid #ffffff;
+  }
+
+  .navbar a {
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  .navbar {
+    color: rgb(0, 0, 0);
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+}
