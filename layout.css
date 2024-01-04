@@ -70,10 +70,12 @@ i:hover {
 }
 
 .footer-column h3 {
+  display: flex;
   font-size: 18px;
   list-style: none;
   text-decoration: none;
   color: #000000;
+  justify-content: left;
 }
 
 .footer-column {
